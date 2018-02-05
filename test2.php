@@ -5,10 +5,10 @@ if(!session_id()) {
 }
 require_once __DIR__ . '/src/Facebook/autoload.php'; // download official fb sdk for php @ https://github.com/facebook/php-graph-sdk
 
-$app_id = "1601729266580492"; // id приложения
-$app_secret = "ee2f8ffe2dfba5c0dae47f22e067af3a"; // секрет приложения
-$page_id = 'skcukz'; // id страницы, с которой будем брать посты
-define("CURRENT_PAGE_ADDR",'http://docs.com/test/test2.php'); // Полный текущий адрес страницы, что бы вернуться на нее после запроса в facebook
+$app_id = "{yor_app_id}"; // id приложения
+$app_secret = "{your_app_secret}"; // секрет приложения
+$page_id = '{your_page_id}'; // id страницы, с которой будем брать посты
+define("CURRENT_PAGE_ADDR",'{full_adress_of_curr_page}'); // Полный текущий адрес страницы, что бы вернуться на нее после запроса в facebook
 
 	
 $fb = new \Facebook\Facebook(array(
